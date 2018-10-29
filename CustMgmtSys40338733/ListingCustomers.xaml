@@ -1,0 +1,25 @@
+﻿<Window x:Class="CustMgmtSys40338733.ListingCustomers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CustMgmtSys40338733"
+        mc:Ignorable="d"
+        Title="Customers List" Height="454.255" Width="811.702">
+    <Grid>
+        <ListView Name="lstCustomers" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" Width="50" DisplayMemberBinding="{Binding Id}"/>
+                    <GridViewColumn Header="First Name" Width="100" DisplayMemberBinding="{Binding FirstName}"/>
+                    <GridViewColumn Header="Surname" Width="100" DisplayMemberBinding="{Binding Surname}"/>
+                    <GridViewColumn Header="Email" Width="150" DisplayMemberBinding="{Binding EmailAddress}"/>
+                    <GridViewColumn Header="Telephone" Width="120" DisplayMemberBinding="{Binding Telephone}"/>
+                    <GridViewColumn Header="Skype" Width="100" DisplayMemberBinding="{Binding SkypeId}"/>
+                    <GridViewColumn Header="Preferred Contact" Width="120" DisplayMemberBinding="{Binding PreferredContact}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>
